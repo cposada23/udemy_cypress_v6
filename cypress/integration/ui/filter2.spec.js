@@ -24,7 +24,6 @@ describe('filter', () => {
     cy.get('.todo-checkbox').each(check => {
       cy.wrap(check).should('be.checked')
     })
-    cy.log('test')
   })
 
   it('Should filter the active todos correctly', () => {
